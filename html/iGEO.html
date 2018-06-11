@@ -1,0 +1,41 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml"><head><title>R: iGEO</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="R.css" />
+</head><body>
+
+<table width="100%" summary="page for iGEO {interGEO}"><tr><td>iGEO {interGEO}</td><td style="text-align: right;">R Documentation</td></tr></table>
+
+<h2>iGEO</h2>
+
+<h3>Description</h3>
+
+<p>Main function. Launches the GUI and all other functions are called by this one.
+</p>
+
+
+<h3>Usage</h3>
+
+<pre>
+iGEO()
+</pre>
+
+
+<h3>Details</h3>
+
+<p>The left panel shows all the GEO &quot;series matrices&quot; available in workspace. By selecting one of those series matrices, a list of all the related expression-data matrices appears in the right panel. Association series matrix-data is performed according to column name matches. The dimension of the data matrix (which can be different from the raw one obtained from exprs(series.matrix)) is shown. Data objects can even contain factors in some rows. It will be an important feature in the &quot;WORKONDATA&quot; option. Each time you select an object, such object moves at the top of its panel.
+<br /> <br />
+Import series matrices with the &quot;LOAD DATASET&quot; option. It launches getGSE function. If the name does not correspond to any dataset in GEO, an error message is launched, but the program keeps running! If a GSE file contains many series matrices, all of them are imported. You can rename each series matrix.
+<br /> <br />
+Create a new expression-data matrix associated to selected dataset with the &quot;CREATE DATA&quot; option. It launches getData function. If no series matrix is either selected or available, an error message is launched, but the program keeps running!
+<br /> <br />
+Delete a series matrix with the &quot;DELETE SM&quot; option. It launches deleteGSE function. If no series matrix is either selected or available, an error message is launched, but the program keeps running!
+<br /> <br />
+Perform basic preliminary operations on data with the &quot;WORK ON DATA&quot; option. It launches workonData function. If no data is either selected or available, an error message is launched, but the program keeps running!
+<br /> <br />
+Scale data column with  with the &quot;WORK ON DATA&quot; option. It launches scaleData function. It is not a simple scale function from the Base library, because of the fact that data matrices can also contain factors in some rows. If no data is either selected or available, an error message is launched, but the program keeps running!
+<br /> <br />
+Delete an expression-data matrix with the &quot;DELETE DATA&quot; option. It launches deleteData function. If no data is either selected or available, an error message is launched, but the program keeps running!
+</p>
+
+<hr /><div style="text-align: center;">[Package <em>interGEO</em> version 0.1 <a href="00Index.html">Index</a>]</div>
+</body></html>

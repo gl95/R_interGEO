@@ -1,0 +1,13 @@
+deleteData	deleteData
+deleteFactor	deleteFactor
+deleteGSE	deleteGSE
+geneSelect	geneSelect
+getData	getData
+getFactor	getFactor
+getGSE	getGSE
+iGEO	iGEO
+renameLevel	renameLevel
+sampleSelect	sampleSelect
+scaleData	scaleData
+searchGENE	searchGENE
+workonData	workonData

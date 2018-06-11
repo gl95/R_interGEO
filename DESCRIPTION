@@ -1,0 +1,9 @@
+Package: interGEO
+Title: GEO data manager - GUI
+Description: Handle GEO series matrices in a convenient way. Perform basic preprocessing and selection on data. Retrieve classification factors and add new ones. All with a graphical interface.
+Version: 0.1
+Author: Gianmarco Lazzeri <gianmarcolazzeri95@gmail.com>
+License: Creative Commons
+Maintainer: Gianmarco Lazzeri <gianmarcolazzeri95@gmail.com>
+RoxygenNote: 6.0.1
+Built: R 3.4.4; ; 2018-06-11 12:37:05 UTC; windows
